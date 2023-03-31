@@ -1,0 +1,45 @@
+@tailwind components;
+@tailwind utilities;
+
+
+
+.code_box{
+  @apply flex justify-center items-center;
+  @apply w-[80%] h-[80%] bg-[#232936];
+  @apply p-4 ring-1 ring-slate-900/10 rounded-3xl focus:outline-none focus:ring-2 focus:ring-cyan-500 caret-cyan-500;
+  @apply font-primary text-white text-[1.2vw] resize-none;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: inset -9px -16px 51px rgba(20, 20, 20, 0.51), inset 11px 16px 12px rgba(0, 0, 0, 0.25);
+}
+
+.code_box::-webkit-scrollbar-track {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 100vw;
+  background-color: rgba(0,0,0,0);
+}
+
+.code_box::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba(0,0,0,0);
+}
+
+.code_box::-webkit-scrollbar-thumb {
+  border-right: 0px solid transparent;
+  border-left: 4px solid rgba(0,224,255,50%);
+  background-clip: padding-box;
+  border-radius: 100vw;
+}
+
+.canvas_box{
+  @apply flex justify-center items-center;
+  @apply w-[500px] h-[500px] bg-[#232936] rounded-3xl;
+  @apply font-primary text-white text-[1.2vw] resize-none;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: -8px -7px 25px rgba(72, 83, 98, 0.36), 6px 9px 31px #18191A;
+}
+
+.run_button{
+  @apply font-primary text-white bg-[#DB5B5B] p-2 px-4 text-[1vw] rounded-full w-[5vw] ml-auto mr-8;
+  box-shadow: 0px 0px 22px #DB5B5B;
+}
